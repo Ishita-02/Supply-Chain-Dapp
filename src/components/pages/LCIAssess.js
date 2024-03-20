@@ -18,7 +18,7 @@ assessments.map(a => (
       a.account === "0x2074b4e9bE42c7724C936c16795C42c04e83d7ae" ? " Supplier#2":
       a.account === "0xa686525B5A5c9353c649b9Ef7f387a9B92085619" ? " Supplier#3":
       a.account === "0x5e66410a4C6443d035E05162C9bb59708cB0596F" ? " Supplier#4":
-      a.account === "0x3421668462324bFB48EA07D0B12243091CD09759" ? " Company": a.account}</caption>
+      a.account === "0x2d6b1b27DC86F77297b467b8D59F2137f3b1773D" ? " Company": a.account}</caption>
       <thead>
           <th>Categories</th>
           <th>Indicators</th>

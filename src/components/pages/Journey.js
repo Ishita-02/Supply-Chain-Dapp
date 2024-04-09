@@ -39,26 +39,32 @@ const Journey = () => {
               if (networkData) {
                   const contract = new web3.eth.Contract(Origin.abi, networkData.address);
                   const orderCount = await contract.methods.orderCount().call();
-                  const shipmentCount = await contract.methods.shipmentCount().call();
+                  //const shipmentCount = await contract.methods.shipmentCount().call();
   
-                  const loadedOrders = [];
-                  const loadedShipments = [];
-                  const loadedLatlong = [];
+                  // const loadedOrders = [];
+                  // const loadedShipments = [];
+                  // const loadedLatlong = [];
   
                   for (let i = 1; i <= orderCount; i++) {
                       const newOrder = await contract.methods.orders(i).call();
-                      loadedOrders.push(newOrder);
+                      setOrders(orders =>([...orders, newOrder]))
+                      //loadedOrders.push(newOrder);
                   }
-  
+                  
+                  const shipmentCount = await contract.methods.shipmentCount().call()
+                  
                   for (let i = 1; i <= shipmentCount; i++) {
                       const newShipment = await contract.methods.shipments(i).call();
-                      loadedShipments.push(newShipment);
-                      loadedLatlong.push(JSON.parse(newShipment.latlong));
+                      setShipment(shipments =>([...shipments, newShipment]))
+                      setOrderID(shipments =>([...shipments, newShipment.product]))
+                      setLatlong(shipments =>([...shipments, JSON.parse(newShipment.latlong)]))
+                      // loadedShipments.push(newShipment);
+                      // loadedLatlong.push(JSON.parse(newShipment.latlong));
                   }
   
-                  setOrders(loadedOrders);
-                  setShipment(loadedShipments);
-                  setLatlong(loadedLatlong);
+                  // setOrders(loadedOrders);
+                  // setShipment(loadedShipments);
+                  // setLatlong(loadedLatlong);
               } else { 
                   window.alert("Origin contract is not deployed to the detected network");
               }
@@ -83,7 +89,7 @@ const Journey = () => {
   const { isLoaded} = useLoadScript({
     googleMapsApiKey: "AIzaSyA1NTVyRpS9yu9w8Otq1K3r-SwMJMvrhNY"
   });
-
+  console.log(orderID)
   const mapContainerStyle = {
     width: "600px", height: "300px",   borderRadius: "20px"
   };
@@ -93,7 +99,7 @@ const Journey = () => {
     zoomControl: true,
   };
   const center = {
-    lat:41.1122, lng:29.0200
+    lat:30.4159, lng:77.9668
   };
 
   const mapRef = React.useRef()

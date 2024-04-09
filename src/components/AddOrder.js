@@ -80,12 +80,15 @@ const AddOrder = ({addOrder, onAdd}) => {
             <div className="product-center-form">                
                 <div className="form-inputs">
                     <label className='order-label'>Select Product</label>
-                    <input 
-                        type="string"
+                    <select 
                         className="order-product" required
-                        placeholder="Enter Product name"
                         value = {name} onChange={(e) => setName(e.target.value)}
-                    />
+                    >
+                        <option value=""disabled selected hidden></option>
+                        {products.map(product => { 
+                        return <option value={product.name}>{product.name} </option>
+                        })}
+                    </select>
                 </div>
                 <div className="form-inputs">
                     <label className='order-label'>Product Quantity and Unit</label>

@@ -23,7 +23,6 @@ const AddShipment = ({addShipment, shipType, onShipAdd}) => {
             //Load account
             const accounts = await web3.eth.getAccounts()
             setAccount(accounts[0])
-            console.log(Origin.abi)
             const networkId = await web3.eth.net.getId()
             // console.log(networkId)
             const networkData = Origin.networks[networkId]

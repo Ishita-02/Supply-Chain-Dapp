@@ -18,11 +18,11 @@ const Timeline = ({shipments, product}) => {
                         <VerticalTimelineElement
                             date={e.date}
                             iconStyle={{ background: 'black', color: '#fff'}}
-                            icon={e.account === "0xf00EbF44706A84d73698D51390a6801215fF338c" ? <GiIcons.GiCottonFlower/>:
-                            e.account === "0x2074b4e9bE42c7724C936c16795C42c04e83d7ae" ? <GiIcons.GiYarn/>: 
-                            e.account === "0xa686525B5A5c9353c649b9Ef7f387a9B92085619" ? <IoIcons.IoColorPaletteOutline/>:
-                            e.account === "0x5e66410a4C6443d035E05162C9bb59708cB0596F" ? <GiIcons.GiSewingMachine/>:
-                            e.account === "0x3421668462324bFB48EA07D0B12243091CD09759" ? <AiIcons.AiOutlineShop/>: null}>
+                            icon={e.account === "0x6886D731Be74158Cc496684989eb833050B81259" ? <GiIcons.GiCottonFlower/>:
+                            e.account === "0xEF91Fad8797FBFa70a3E123e16291b6efcCe8ceF" ? <GiIcons.GiYarn/>: 
+                            e.account === "0x5F1E74274E3903744d025d05e971160F293AC83D" ? <IoIcons.IoColorPaletteOutline/>:
+                            e.account === "0x71bE63f3384f5fb98995898A86B02Fb2426c5788" ? <GiIcons.GiSewingMachine/>:
+                            e.account === "0x2d6b1b27DC86F77297b467b8D59F2137f3b1773D" ? <AiIcons.AiOutlineShop/>: null}>
                             <div className='time-title'>
                             <h4>
                             {e.shipType === "Shipment Sent" ? e.process + " Sent" :  e.process + " Received"}
@@ -32,20 +32,20 @@ const Timeline = ({shipments, product}) => {
                             </button>                                
                             </div>
                             <h4 className="subtitle">
-                                {e.account === "0xf00EbF44706A84d73698D51390a6801215fF338c" ? "by Supplier#1":
-                                e.account === "0x2074b4e9bE42c7724C936c16795C42c04e83d7ae" ? "by Supplier#2":
-                                e.account === "0xa686525B5A5c9353c649b9Ef7f387a9B92085619" ? "by Supplier#3":
-                                e.account === "0x5e66410a4C6443d035E05162C9bb59708cB0596F" ? "by Supplier#4":
-                                e.account === "0x3421668462324bFB48EA07D0B12243091CD09759" ? "by Company": null}
+                                {e.account === "0x6886D731Be74158Cc496684989eb833050B81259" ? "by Supplier#1":
+                                e.account === "0xEF91Fad8797FBFa70a3E123e16291b6efcCe8ceF" ? "by Supplier#2":
+                                e.account === "0x5F1E74274E3903744d025d05e971160F293AC83D" ? "by Supplier#3":
+                                e.account === "0x71bE63f3384f5fb98995898A86B02Fb2426c5788" ? "by Supplier#4":
+                                e.account === "0x2d6b1b27DC86F77297b467b8D59F2137f3b1773D" ? "by Company": null}
                             </h4>
                             <button className='as-btn'>
                               <Link to="assessments" state={e.account} style={{ textDecoration: 'none', color: "black"}}>
                               Environmental and Social Sustainability Assessment of
-                              {e.account === "0xf00EbF44706A84d73698D51390a6801215fF338c" ? " Supplier#1":
-                                e.account === "0x2074b4e9bE42c7724C936c16795C42c04e83d7ae" ? " Supplier#2":
-                                e.account === "0xa686525B5A5c9353c649b9Ef7f387a9B92085619" ? " Supplier#3":
-                                e.account === "0x5e66410a4C6443d035E05162C9bb59708cB0596F" ? " Supplier#4":
-                                e.account === "0x3421668462324bFB48EA07D0B12243091CD09759" ? " Company": null}
+                              {e.account === "0x6886D731Be74158Cc496684989eb833050B81259" ? " Supplier#1":
+                                e.account === "0xEF91Fad8797FBFa70a3E123e16291b6efcCe8ceF" ? " Supplier#2":
+                                e.account === "0x5F1E74274E3903744d025d05e971160F293AC83D" ? " Supplier#3":
+                                e.account === "0x71bE63f3384f5fb98995898A86B02Fb2426c5788" ? " Supplier#4":
+                                e.account === "0x2d6b1b27DC86F77297b467b8D59F2137f3b1773D" ? " Company": null}
                               </Link>
                             </button>
                             <h4 className='description'>{e.shipType}: {e.date}</h4>               

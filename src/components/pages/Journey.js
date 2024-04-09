@@ -2,11 +2,11 @@ import React, { useState, useEffect} from 'react'
 import Web3 from "web3"
 import Origin from "../../abis/Origin.json"
 import Sidebar from '../Sidebar'
-// import {
-//   GoogleMap,
-//   Marker,
-//   useLoadScript,
-// } from "@react-google-maps/api"
+import {
+  GoogleMap,
+  Marker,
+  useLoadScript,
+} from "@react-google-maps/api"
 import Timeline from '../Timeline'
 
 const Journey = () => {
@@ -80,10 +80,9 @@ const Journey = () => {
   const newShipment = (shipments.map(t1 => ({...t1, ...latlong.find(t2 => t2.id === t1.id)})))
 
   const unique = [...new Set(orderID.map(item => item))]
-
-  // const { isLoaded} = useLoadScript({
-  //   googleMapsApiKey: "AIzaSyA1NTVyRpS9yu9w8Otq1K3r-SwMJMvrhNY"
-  // });
+  const { isLoaded} = useLoadScript({
+    googleMapsApiKey: "AIzaSyA1NTVyRpS9yu9w8Otq1K3r-SwMJMvrhNY"
+  });
 
   const mapContainerStyle = {
     width: "600px", height: "300px",   borderRadius: "20px"
@@ -102,7 +101,7 @@ const Journey = () => {
     mapRef.current = map;
   }, []);
 
-  //if (!isLoaded) return null;
+  if (!isLoaded) return null;
 
   return (
     <div>
@@ -121,7 +120,7 @@ const Journey = () => {
                   })}
                   </select>
         </div>
-        {/* {formProduct !== "" ? 
+        {formProduct !== "" ? 
         <GoogleMap
               id="map"
               mapContainerStyle={mapContainerStyle}
@@ -136,7 +135,7 @@ const Journey = () => {
               position={{lat: Number(a.latitude), lng: Number(a.longitude)}} />
 
             ))}
-            </GoogleMap> : null} */}
+            </GoogleMap> : null}
         </div>
         <Timeline shipments={shipments} product={formProduct}/>
     </div>

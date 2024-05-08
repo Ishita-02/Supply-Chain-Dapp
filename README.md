@@ -29,12 +29,11 @@ In the assessments page, the focal company and its suppliers do the environmenta
 
 The focal company enters information into the environmental assessment form. After submitting the assessment form, the system automatically calculates sustainability indicators.
 
-<img src="https://user-images.githubusercontent.com/44509698/234398157-beb5eb14-d91e-4019-84af-854716af99c4.png" width="700">
-<img src="https://user-images.githubusercontent.com/44509698/234396794-0e21629f-9204-43cc-837e-33f23017deb0.png" width="700"> 
+![Screenshot 2024-05-08 192121](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/89924a0b-f42c-46a2-9043-060ea70b05ff)
 
 The focal company or suppliers can display the environmental and social sustainability indicators with charts. In the charts, indicators are grouped according to similarities of their measurement units or their contexts. Also, in the chart section various sustainability assessments can be viewed at the same time or can be filtered by month or year. Thus, stakeholders can analyze and compare their past performances and evaluate their sustainability progress. 
 
-![Screenshot 2024-04-26 195512](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/ad30571d-5af0-4d29-adcb-d911af5abb08)
+
 
 When the focal company and all of its suppliers have completed their environmental and social assessments, the company creates orders. To create an order, the focal company first must create a digital record of the product. The image of the product is uploaded to IPFS.
 
@@ -46,19 +45,17 @@ After registering the product, the focal company creates an order. In this scena
 
 Later, the suppliers’ send or receive the shipments of the order. When sending or receiving the shipments, each supplier selects the order and their production stage. As shipment is sent or received the real-time location (latitude and longitude), descriptive name of the location and the time information is obtained and displayed via Google API.
 
-<img src="https://user-images.githubusercontent.com/44509698/234400211-8e04e1fa-30e3-44f8-b22f-8f4d800be65d.png" width="700">
-<img src="https://user-images.githubusercontent.com/44509698/234400083-c3f05b9c-1e0b-4990-8232-9ca491e942e9.png" width="700">
+![Screenshot 2024-05-08 192245](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/3380b792-521e-4641-bcdc-949ce41bb101)
+
 
 The life cycle inventory for each product can be done after relevant production stages are completed. The company or the suppliers enter information to LCI form of the material flow for their production stage (Figure 27). After submitting the form, the system automatically calculates LCI indicators.
 
-<img src="https://user-images.githubusercontent.com/44509698/234405656-7ce70961-4a52-4fac-8646-a510b124da20.png" width="700">
+![Screenshot 2024-05-08 192411](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/b91c9ff5-49d7-4d39-963f-5fa82c8be605)
 
-From the reports page, stakeholders can view the LCI analysis chart. All the product production stages are displayed in the x axis of each chart. With these informations stakeholders can detect inefficacies in their production processes and find out about the environmental impact of each production processes. 
-
-![Screenshot 2024-04-26 195450](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/8aeda1e9-3980-4486-a292-bd6107cc25fb)
 
 Finally, when the order is completed, customers can see the entire product journey; the shipment locations and time, production stages. They can also display the environmental footprint of each product and the environmental and social sustainability assessment of suppliers and the focal company. 
 
-<img src="https://user-images.githubusercontent.com/44509698/227777379-5d3bcce2-d824-4133-955d-120c4c1a4a71.png" width="800">
+![Screenshot 2024-04-10 010454](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/ea887ff8-3e66-461a-913c-16f47fece24c)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

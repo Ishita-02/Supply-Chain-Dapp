@@ -25,7 +25,7 @@ This diagram shows the different actors and their interactions with the system.
 
 In the assessments page, the focal company and its suppliers do the environmental, social assessments to measure their monthly or annual sustainability performance. 
 
-<img src="https://user-images.githubusercontent.com/44509698/227777345-93a637b8-710e-470a-abdc-26c63749abf8.png" width="800">
+![Screenshot 2024-04-26 195526](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/1bd81a97-ca9d-4318-9bc6-7d8ba62aff42)
 
 The focal company enters information into the environmental assessment form. After submitting the assessment form, the system automatically calculates sustainability indicators.
 
@@ -34,16 +34,15 @@ The focal company enters information into the environmental assessment form. Aft
 
 The focal company or suppliers can display the environmental and social sustainability indicators with charts. In the charts, indicators are grouped according to similarities of their measurement units or their contexts. Also, in the chart section various sustainability assessments can be viewed at the same time or can be filtered by month or year. Thus, stakeholders can analyze and compare their past performances and evaluate their sustainability progress. 
 
-<img src="https://user-images.githubusercontent.com/44509698/227777426-274c8fca-a181-453a-99c5-6e401831cfdc.png" width="800">
-<img src="https://user-images.githubusercontent.com/44509698/234384044-3862be5b-68d0-476d-8623-953d8cc00e86.jpg" width="800">
+![Screenshot 2024-04-26 195512](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/ad30571d-5af0-4d29-adcb-d911af5abb08)
 
 When the focal company and all of its suppliers have completed their environmental and social assessments, the company creates orders. To create an order, the focal company first must create a digital record of the product. The image of the product is uploaded to IPFS.
-<img src="https://user-images.githubusercontent.com/44509698/227777549-61a27643-3880-420b-8485-c350b5b89ad3.png" width="700">
-<img src="https://user-images.githubusercontent.com/44509698/234409672-5692d813-8c30-4379-98ca-f55a404e2533.jpg" width="700">
+
+![Screenshot 2024-04-26 195621](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/f17295da-7849-497f-ab8a-ede901de125d)
 
 After registering the product, the focal company creates an order. In this scenario, production of 1000 t-shirts are ordered. The permission to add products and orders is only given to the focal company.
 
-<img src="https://user-images.githubusercontent.com/44509698/234399310-7c2d04db-2888-4572-903e-574b23d5b6eb.png" width="800">
+![Screenshot 2024-04-26 195435](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/f009b3ef-f054-4059-9928-fafbc11bf921)
 
 Later, the suppliers’ send or receive the shipments of the order. When sending or receiving the shipments, each supplier selects the order and their production stage. As shipment is sent or received the real-time location (latitude and longitude), descriptive name of the location and the time information is obtained and displayed via Google API.
 
@@ -56,7 +55,7 @@ The life cycle inventory for each product can be done after relevant production 
 
 From the reports page, stakeholders can view the LCI analysis chart. All the product production stages are displayed in the x axis of each chart. With these informations stakeholders can detect inefficacies in their production processes and find out about the environmental impact of each production processes. 
 
-<img src="https://user-images.githubusercontent.com/44509698/234405599-95fcea5e-6376-4e2c-b3d8-04c7ad638d57.png" width="800">
+![Screenshot 2024-04-26 195450](https://github.com/Ishita-02/Supply-Chain-Dapp/assets/88130678/8aeda1e9-3980-4486-a292-bd6107cc25fb)
 
 Finally, when the order is completed, customers can see the entire product journey; the shipment locations and time, production stages. They can also display the environmental footprint of each product and the environmental and social sustainability assessment of suppliers and the focal company. 
 
